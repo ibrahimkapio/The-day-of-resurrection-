@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background: darkcyan;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: -60px;
+    left: 1;
+    transition: top 0.5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: center;
+    background: darkcyan;
+    color: white;
+
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Button Animation */
+.animated-button {
+    padding: 15px 15px;
+    font-size: 18px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    
+}
+
+.animated-button:hover {
+    background: red;
+    transform: scale(1.2);
+}
+
+/* Scroll Reveal Animation */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Logo Animation */
+.logo {
+    width: 50px;
+    height: 50px;
+    background: greenyellow;
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
